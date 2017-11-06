@@ -16,7 +16,7 @@ described here!
    static main(String[]) // The entry point of our program.
 
   Car
-   // There is a 35% chance that cars' nitro can break down. In that case they are 20% slower for that hour.
+   // Due to regulations there is a 35% chance that cars will be limited to 70 km/h in that hour.
    static setSpeedLimit(int limit) // Call this from the Main class!
    normalSpeed // the normal speed of the car. Set to a random number in the constructor between 80-110km/h.
    name // Make a list from the words here: http://www.fantasynamegenerators.com/car-names.php and pick 2 randomly for each instance.
