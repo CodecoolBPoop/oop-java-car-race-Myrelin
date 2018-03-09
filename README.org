@@ -17,11 +17,11 @@ described here!
 
   Car
    // Due to regulations there is a 35% chance that cars will be limited to 70 km/h in that hour.
-   static setSpeedLimit(int limit) // Call this from the Main class!
-   normalSpeed // the normal speed of the car. Set to a random number in the constructor between 80-110km/h.
+   static setSpeedLimit(int limit) // Call this from the Race class!
+   speed // the normal speed of the car. Set to a random number in the constructor between 80-110km/h.
    name // Make a list from the words here: http://www.fantasynamegenerators.com/car-names.php and pick 2 randomly for each instance.
    distanceTraveled // holds the current distance traveled.
-   moveForAnHour() // The vehicle travels for an hour. It increases the distance traveled. Call this from the main class only!
+   moveForAnHour() // The vehicle travels for an hour. It increases the distance traveled. Call this from the Race class only!
 
   Motorcycle // speed is 100km/h. If rains, travels with 5-50km/h slower (randomly).
    static nameNumber // The number of the instance created. Used for its name.
