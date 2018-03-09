@@ -1,5 +1,5 @@
 * Car race
-Your taks will be to simulate a race. You will need to create 10 cars,
+Your task will be to simulate a race. You will need to create 10 cars,
 10 trucks, 10 motorcycles, and race them for 50 hours. After
 simulating the race print the results.
 
