@@ -1,0 +1,15 @@
+* New with parts
+** TODO cars can break down
+** TODO parts
+*** carburator
+*** wheels
+*** fuel type
+- diesel
+- gas
+- electric
+- hybrid
+** TODO cars have a unique ID
+** TODO Race
+- constant rules
+- cars have to register
+** TODO Weather object
