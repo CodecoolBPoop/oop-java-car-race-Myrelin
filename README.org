@@ -10,11 +10,14 @@ described here!
 
 #+BEGIN_SRC java
   Race
-   static isRaining // 30% chance of rain every hour
-   createVehicles() // creates 10 cars, 10 trucks and 10 motorcycles
+   createVehicles() // creates 10 cars, 10 trucks and 10 motorcycles.
    simulateRace() // simulates the race by calling moveForAnHour() on every vehicle 50 times and setting whether its raining.
    printRaceResults() // prints each vehicle's name, distance traveled ant type.
    static main(String[]) // The entry point of our program.
+
+  Weather
+   static setRaining() // 30% chance of rain.
+   static boolean isRaining() // is it raining currently.
 
   Car
    // Due to regulations there is a 35% chance that cars will be limited to 70 km/h in that hour.
