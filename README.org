@@ -7,6 +7,7 @@ As a guideline here are the classes you will need to create and some
 of their functions/properties. Note that this is just a skeleton, feel
 free to add more methods/variables. But you must implement the ones
 described here!
+
 #+BEGIN_SRC java
   Race
    static isRaining // 30% chance of rain every hour
@@ -32,8 +33,10 @@ described here!
   Truck // speed: 100km/h. 5% chance of breaking down for 2 hours.
    // Truck drivers are boring. They call all their trucks a random number between 0 and 1000.
    breakdownTurnsLeft // holds how long its still broken down.
-   distanceTraveled 
+   distanceTraveled
    moveForAnHour()
 #+END_SRC
+Have you noticed that Car, Motorcycle and Truck share some similarities?
+Use inheritance to abstract away common parts.
 * Hints
 Use the built in Random class to generate random numbers.
