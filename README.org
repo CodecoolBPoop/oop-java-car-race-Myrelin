@@ -39,7 +39,8 @@ described here!
    distanceTraveled
    moveForAnHour()
 #+END_SRC
-Have you noticed that Car, Motorcycle and Truck share some similarities?
-Use inheritance to abstract away common parts.
 * Hints
-Use the built in Random class to generate random numbers.
+- Have you noticed that Car, Motorcycle and Truck share some similarities?
+  Use inheritance to abstract away common parts.
+- Use the built-in Random class to generate random numbers.
+  Implement a util class around it, if you find it useful.
