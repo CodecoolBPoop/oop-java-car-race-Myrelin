@@ -1,5 +1,5 @@
 * Car race
-Your taks will be to simulate a race.  You will need to create 10
+Your task will be to simulate a race.  You will need to create 10
 cars, 10 trucks, 10 motorcycles, and race them for 50 hours.  After
 simulating the race print the results.
 
@@ -9,37 +9,40 @@ free to add more methods/variables.  But you must implement the ones
 described here!
 
 #+BEGIN_SRC java
+  Main
+   static main(String[]) // The entry point of our program.
+  
   Race
-   createVehicles() // creates 10 cars, 10 trucks and 10 motorcycles.
    simulateRace() // simulates the race by
                   // - calling moveForAnHour() on every vehicle 50 times
                   // - setting whether its raining
    printRaceResults() // prints each vehicle's name, distance traveled ant type.
-   boolean isThereABrokenTruck() //
-   static main(String[]) // The entry point of our program.
+   boolean isThereABrokenTruck() // returns true if there is a broken truck on track
 
   Weather
-   static setRaining() // 30% chance of rain.
-   static boolean isRaining() // is it raining currently.
+   setRaining() // 30% chance of rain.
+   boolean isRaining() // is it raining currently.
 
-  Car
+  Car // If there is a broken down Truck on the track, then limit the max speed of vehicles to 75 km/h.
    normalSpeed // the normal speed of the car. Set to a random number in the constructor between 80-110km/h.
    name // Make a list from the words here: http://www.fantasynamegenerators.com/car-names.php and pick 2 randomly for each instance.
-   distanceTraveled // holds the current distance traveled.
-   moveForAnHour(Race race) // The vehicle travels for an hour. It increases the distance traveled. Call this from the main class only!
-                            // If there is a broken down Truck on the track, then limit the max speed of vehicles to 75 km/h.
+   distanceTraveled // holds the summarized distance traveled in the race.
+   prepareForLap(Race race) // setup the actual speed used for the current lap
+   moveForAnHour() // The vehicle travels for an hour. It increases the distance traveled. Call this from the Race::simulateRace() only!
 
   Motorcycle // speed is 100km/h. If it rains, travels with 5-50km/h slower (randomly).
-   static nameNumber // The number of the instance created. Used for its name.
+   motorcycleNumber // The number of the instance created. Used for its name.
    name // Are called "Motorcycle 1", "Motorcycle 2", "Motorcycle 3",... Unique.
-   distanceTraveled
-   moveForAnHour(Race race)
-
-  Truck // speed: 100km/h. 5% chance of breaking down for 2 hours.
+   distanceTraveled // holds the summarized distance traveled in the race.
+   prepareForLap(Race race) // setup the actual speed used for the current lap
+   moveForAnHour() // The vehicle travels for an hour. It increases the distance traveled. Call this from the Race::simulateRace() only!
+  
+  Truck // speed: 100km/h. 5% chance of breaking down for 2 turns.
    // Truck drivers are boring. They call all their trucks a random number between 0 and 1000.
    breakdownTurnsLeft // holds how long its still broken down.
-   distanceTraveled
-   moveForAnHour(Race race)
+   distanceTraveled // holds the summarized distance traveled in the race.
+   prepareForLap(Race race) // setup the actual speed used for the current lap
+   moveForAnHour() // The vehicle travels for an hour. It increases the distance traveled. Call this from the Race::simulateRace() only!
 #+END_SRC
 * Hints
 - Have you noticed that Car, Motorcycle and Truck share some similarities?
