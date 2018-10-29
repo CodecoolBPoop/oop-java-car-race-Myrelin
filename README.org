@@ -23,14 +23,14 @@ described here!
    setRaining() // 30% chance of rain.
    boolean isRaining() // is it raining currently.
 
-  Car // If there is a broken down Truck on the track, then limit the max speed of vehicles to 75 km/h.
+  Car // If there is a broken down Truck on the track, then limit the max speed of cars to 75 km/h.
    normalSpeed // the normal speed of the car. Set to a random number in the constructor between 80-110km/h.
    name // Make a list from the words here: http://www.fantasynamegenerators.com/car-names.php and pick 2 randomly for each instance.
    distanceTraveled // holds the summarized distance traveled in the race.
    prepareForLap(Race race) // setup the actual speed used for the current lap
    moveForAnHour() // The vehicle travels for an hour. It increases the distance traveled. Call this from the Race::simulateRace() only!
 
-  Motorcycle // speed is 100km/h. If it rains, travels with 5-50km/h slower (randomly).
+  Motorcycle // speed is 100km/h. If it rains, travels with 5-50km/h slower (randomly). Doesn't care about trucks.
    motorcycleNumber // The number of the instance created. Used for its name.
    name // Are called "Motorcycle 1", "Motorcycle 2", "Motorcycle 3",... Unique.
    distanceTraveled // holds the summarized distance traveled in the race.
